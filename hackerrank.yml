@@ -3,13 +3,9 @@ configuration:
   has_webserver: false
   readonly_paths:
     - src/test/*
-  scoring:
-    command: mvn clean test
-    files:
-      - target/surefire-reports/TEST-com.hackerrank.files.ApplicationTests.xml
   ide_config:
     default_open_files:
-      - src/main/java/com/hackerrank/files/Application.java
+      - README.md
     project_menu:
       run: mvn clean spring-boot:run
       install: mvn clean install
